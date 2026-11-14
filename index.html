@@ -6,18 +6,22 @@
 <!-- EDIT: judul tab & deskripsi buat Google -->
 <title>Duduk Cerita | Psikologi ala Tongkrongan</title>
 <meta name="description" content="Media kecil dari mahasiswa psikologi. Podcast, tulisan, dan konten biar psikologi makin dekat dan jauh dari hoaks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/styling/style.css">
+<script src="assets/js/site.js" defer></script>
 </head>
 <body>
 
 <header class="nav">
   <div class="wadah">
-    <a class="logo" href="index.html"><img src="assets/logo-nav.png" alt="Duduk Cerita"></a>
-    <ul>
+    <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita"></a>
+    <button class="burger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-nav"><span></span><span></span><span></span></button>
+    <ul id="menu-nav">
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="index.html#tentang">Tentang</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
       <li><a href="tim.html">Tim</a></li>
     </ul>
   </div>
@@ -27,21 +31,21 @@
   <!-- EDIT: pertanyaan pancingan -->
   <p class="pancingan">Kalau kebahagiaan bisa dibeli, kenapa banyak orang tetap merasa kosong?</p>
   <!-- EDIT: judul -->
-  <h1><img src="assets/logo-nav.png" alt="Duduk Cerita"></h1>
+  <h1><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita"></h1>
   <!-- EDIT: deskripsi -->
   <p class="deskripsi">Psikologi yang nggak bikin pusing, ngobrolnya ala tongkrongan. Media kecil dari mahasiswa psikologi, biar ilmu psikologi makin dekat dan jauh dari hoaks.</p>
   <!-- EDIT: link platform podcast (ganti href kalau ada yang berubah) -->
   <p class="dengerin">Dengerin di</p>
   <div class="platform">
-    <a href="https://open.spotify.com/show/5ro07TWW1B1qlpnfPcXH9s" target="_blank" rel="noopener" aria-label="Dengerin di Spotify"><img src="assets/badge-spotify.png" alt="Spotify"></a>
-    <a href="https://www.youtube.com/@dudukceritaid" target="_blank" rel="noopener" aria-label="Nonton di YouTube"><img src="assets/badge-youtube.png" alt="YouTube"></a>
-    <a href="https://open.noice.id/catalog/bb728cef-943c-4de5-a036-f1ba72d7c10d" target="_blank" rel="noopener" aria-label="Dengerin di Noice"><img src="assets/badge-noice.png" alt="Noice"></a>
+    <a href="https://open.spotify.com/show/5ro07TWW1B1qlpnfPcXH9s" target="_blank" rel="noopener" aria-label="Dengerin di Spotify"><img src="assets/image/badge/spotify.webp" width="320" height="96" alt="Spotify"></a>
+    <a href="https://www.youtube.com/@dudukceritaid" target="_blank" rel="noopener" aria-label="Nonton di YouTube"><img src="assets/image/badge/youtube.webp" width="320" height="96" alt="YouTube"></a>
+    <a href="https://open.noice.id/catalog/bb728cef-943c-4de5-a036-f1ba72d7c10d" target="_blank" rel="noopener" aria-label="Dengerin di Noice"><img src="assets/image/badge/noice.webp" width="320" height="96" alt="Noice"></a>
   </div>
   <div class="hashtag">#MembiasakanBerPsikologi</div>
 </section>
 
 <section class="tentang" id="tentang">
-  <div class="wadah isi">
+  <div class="wadah tentang-grid">
     <div class="teks">
       <!-- EDIT: kalimat pancingan -->
       <p class="catatan">Pernah nggak sih, nyari tahu soal psikologi malah ketemu hoaks?</p>
@@ -49,6 +53,7 @@
       <!-- EDIT: misi, ubah sesuka lu -->
       <p>Banyak anak muda penasaran sama psikologi, tapi yang gampang ditemuin di sosmed sering setengah benar. Duduk Cerita hadir buat jadi jembatan antara rasa penasaran itu dan ilmu psikologi yang berbasis sains.</p>
       <p>Caranya lewat psikoedukasi dari kami, mahasiswa S1 psikologi. Ngomongnya ala temen tongkrongan, tapi tetap pakai sudut pandang psikologi.</p>
+      <p><a class="btn isi kecil" href="tentang.html">Kenalan lebih dalam</a></p>
     </div>
     <!-- EDIT: isi tiap kotak boleh diubah -->
     <div class="jembatan">
@@ -61,8 +66,8 @@
         <p class="satu"><small>Dari</small>Anak muda yang penasaran</p>
         <div class="tengah">
           <small>Lewat</small>
-          <!-- EDIT: logo 2 baris (assets/logo-tumpuk.png) -->
-          <img src="assets/logo-tumpuk.png" alt="Duduk Cerita">
+          <!-- EDIT: logo 2 baris (assets/image/logo/duduk-cerita-tumpuk.webp) -->
+          <img src="assets/image/logo/duduk-cerita-tumpuk.webp" width="640" height="271" alt="Duduk Cerita" loading="lazy">
         </div>
         <p class="tiga"><small>Jadi</small>Ngerti ilmu psikologi yang valid</p>
       </div>
@@ -101,25 +106,25 @@
   <div class="wadah">
     <h2>Tim</h2>
     <div class="tim-grid">
-      <!-- EDIT: satu blok = satu orang. Foto: assets/foto-dicki.jpg -->
+      <!-- EDIT: satu blok = satu orang. Foto: assets/image/tim/dicki.webp -->
       <article class="orang">
-        <div class="foto"><img src="assets/foto-dicki.jpg" alt="Dicki Syafrudin" width="600" height="600"></div>
+        <div class="foto"><img src="assets/image/tim/dicki.webp" alt="Dicki Syafrudin" width="400" height="400" loading="lazy"></div>
         <h3>Dicki Syafrudin</h3>
         <p class="posisi">Initiator &amp; Coordinator</p>
         <a class="btn kecil" href="Tim-Dicki.html">Lihat profil</a>
       </article>
 
-      <!-- EDIT: satu blok = satu orang. Foto: assets/foto-fitri.jpg -->
+      <!-- EDIT: satu blok = satu orang. Foto: assets/image/tim/fitri.webp -->
       <article class="orang">
-        <div class="foto"><img src="assets/foto-fitri.jpg" alt="Fitri Amalia" width="600" height="600"></div>
+        <div class="foto"><img src="assets/image/tim/fitri.webp" alt="Fitri Amalia" width="400" height="400" loading="lazy"></div>
         <h3>Fitri Amalia</h3>
         <p class="posisi">Human Resource Manager</p>
         <a class="btn kecil" href="Tim-Fitri.html">Lihat profil</a>
       </article>
 
-      <!-- EDIT: satu blok = satu orang. Foto: assets/foto-gibran.jpg -->
+      <!-- EDIT: satu blok = satu orang. Foto: assets/image/tim/gibran.webp -->
       <article class="orang">
-        <div class="foto"><img src="assets/foto-gibran.jpg" alt="Gibran Ridho Aslam" width="600" height="600"></div>
+        <div class="foto"><img src="assets/image/tim/gibran.webp" alt="Gibran Ridho Aslam" width="400" height="400" loading="lazy"></div>
         <h3>Gibran Ridho Aslam</h3>
         <p class="posisi">Content Research Lead</p>
         <a class="btn kecil" href="Tim-Gibran.html">Lihat profil</a>
@@ -130,7 +135,7 @@
 
 <!-- Footer: sama di semua halaman -->
 <footer>
-  <a class="logo" href="index.html"><img src="assets/logo-nav.png" alt="Duduk Cerita"></a>
+  <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita" loading="lazy"></a>
   <div class="sosmed">
     <a href="https://instagram.com/dudukcerita.id" target="_blank" rel="noopener">Instagram</a>
     <a href="https://open.noice.id/catalog/bb728cef-943c-4de5-a036-f1ba72d7c10d" target="_blank" rel="noopener">Noice</a>

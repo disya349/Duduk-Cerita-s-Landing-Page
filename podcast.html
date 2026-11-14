@@ -6,18 +6,22 @@
 <!-- EDIT: judul tab & deskripsi buat Google -->
 <title>Podcast | Duduk Cerita</title>
 <meta name="description" content="Podcast Duduk Cerita: obrolan santai soal kesehatan mental dan hidup anak muda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/styling/style.css">
+<script src="assets/js/site.js" defer></script>
 </head>
 <body>
 
 <header class="nav">
   <div class="wadah">
-    <a class="logo" href="index.html"><img src="assets/logo-nav.png" alt="Duduk Cerita"></a>
-    <ul>
+    <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita"></a>
+    <button class="burger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-nav"><span></span><span></span><span></span></button>
+    <ul id="menu-nav">
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="index.html#tentang">Tentang</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
       <li><a href="tim.html">Tim</a></li>
     </ul>
   </div>
@@ -33,9 +37,9 @@
     <!-- EDIT: link platform (sama kayak hero index) -->
     <p class="dengerin catatan">Dengerin di</p>
     <div class="platform">
-      <a href="https://open.spotify.com/show/5ro07TWW1B1qlpnfPcXH9s" target="_blank" rel="noopener" aria-label="Dengerin di Spotify"><img src="assets/badge-spotify.png" alt="Spotify"></a>
-      <a href="https://www.youtube.com/@dudukceritaid" target="_blank" rel="noopener" aria-label="Nonton di YouTube"><img src="assets/badge-youtube.png" alt="YouTube"></a>
-      <a href="https://open.noice.id/catalog/bb728cef-943c-4de5-a036-f1ba72d7c10d" target="_blank" rel="noopener" aria-label="Dengerin di Noice"><img src="assets/badge-noice.png" alt="Noice"></a>
+      <a href="https://open.spotify.com/show/5ro07TWW1B1qlpnfPcXH9s" target="_blank" rel="noopener" aria-label="Dengerin di Spotify"><img src="assets/image/badge/spotify.webp" width="320" height="96" alt="Spotify"></a>
+      <a href="https://www.youtube.com/@dudukceritaid" target="_blank" rel="noopener" aria-label="Nonton di YouTube"><img src="assets/image/badge/youtube.webp" width="320" height="96" alt="YouTube"></a>
+      <a href="https://open.noice.id/catalog/bb728cef-943c-4de5-a036-f1ba72d7c10d" target="_blank" rel="noopener" aria-label="Dengerin di Noice"><img src="assets/image/badge/noice.webp" width="320" height="96" alt="Noice"></a>
     </div>
   </div>
 </section>
@@ -120,7 +124,7 @@
 
 <!-- Footer: sama di semua halaman -->
 <footer>
-  <a class="logo" href="index.html"><img src="assets/logo-nav.png" alt="Duduk Cerita"></a>
+  <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita" loading="lazy"></a>
   <div class="sosmed">
     <a href="https://instagram.com/dudukcerita.id" target="_blank" rel="noopener">Instagram</a>
     <a href="https://open.noice.id/catalog/bb728cef-943c-4de5-a036-f1ba72d7c10d" target="_blank" rel="noopener">Noice</a>

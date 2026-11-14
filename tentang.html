@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- EDIT: judul tab & deskripsi buat Google -->
+<title>Tentang | Duduk Cerita</title>
+<meta name="description" content="Kenali Duduk Cerita lebih dalam: cerita awal, nilai yang kami pegang, dan cara kami bikin psikoedukasi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styling/style.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wadah">
+    <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita"></a>
+    <button class="burger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-nav"><span></span><span></span><span></span></button>
+    <ul id="menu-nav">
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="tim.html">Tim</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="kepala">
+  <div class="wadah">
+    <a class="balik" href="index.html">&larr; Kembali</a>
+    <p class="catatan">Kenalan lebih dalam</p>
+    <h1>Tentang Duduk Cerita</h1>
+    <!-- EDIT: penjelasan singkat -->
+    <p>Dari mana kami mulai, apa yang kami pegang, dan gimana obrolan tongkrongan bisa jadi psikoedukasi.</p>
+  </div>
+</section>
+
+<section class="halaman">
+  <div class="wadah cerita-awal">
+    <div>
+      <p class="catatan">Cerita awalnya</p>
+      <h2>Berawal dari keresahan</h2>
+    </div>
+    <div>
+      <!-- EDIT: sesuaikan cerita asli awal Duduk Cerita (tahun, momen, siapa yang mulai) -->
+      <p>Banyak anak muda penasaran sama psikologi dan kesehatan mental. Tapi yang paling gampang ditemuin di sosmed sering cuma setengah benar, bahkan bikin istilah psikologi bergeser dari makna aslinya.</p>
+      <p>Praktik klinis punya batasnya, dan kami sadar itu. Tapi lulusan S1 Psikologi tetap bisa berperan lewat psikoedukasi: jadi jembatan antara rasa ingin tahu masyarakat dan dunia profesionalnya, dengan bahasa yang rasanya kayak lagi nongkrong.</p>
+      <p class="cerita">Psikologi seharusnya dekat, bukan menakutkan.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fakta" id="kenapa">
+  <div class="wadah">
+    <p class="catatan">Kenapa kami ada</p>
+    <h2>Butuhnya besar, layanannya terbatas</h2>
+    <!-- EDIT: angka sudah dicek ke sumber resmi. Tahun sumber ada di tiap kartu -->
+    <p>Klik tiap tab buat lihat gambarannya.</p>
+
+    <div class="tabs" role="tablist" aria-label="Gambaran kebutuhan kesehatan mental">
+      <button class="tab" role="tab" aria-selected="true"><span>1</span>Kebutuhan</button>
+      <button class="tab" role="tab" aria-selected="false"><span>2</span>Layanan</button>
+      <button class="tab" role="tab" aria-selected="false"><span>3</span>Jembatan</button>
+    </div>
+
+    <div class="panel" role="tabpanel">
+      <div class="stat-grid">
+        <div class="stat">
+          <span class="angka" data-count="2.0" data-dec="1" data-suf="%">2,0%</span>
+          <p>Prevalensi depresi pada usia 15–24 tahun, tertinggi di antara kelompok umur lain. Angka nasionalnya 1,4%.</p>
+          <p class="sumber">SKI 2023, Kemenkes</p>
+        </div>
+        <div class="stat">
+          <span class="angka" data-count="10.4" data-dec="1" data-suf="%">10,4%</span>
+          <p>anak muda dengan depresi yang mencari pengobatan. Kelompok ini paling sedikit berobat.</p>
+          <p class="sumber">SKI 2023, Kemenkes</p>
+        </div>
+      </div>
+      <div class="interaktif">
+        <h3>Masalah dan gangguan itu beda, coba bandingkan</h3>
+        <div class="seg" role="group" aria-label="Pilih angka">
+          <button type="button" aria-pressed="true" data-w="34.9" data-n="34,9%" data-t="Sekitar 15,5 juta remaja usia 10–17 tahun punya minimal satu masalah kesehatan mental dalam 12 bulan terakhir. Ini belum tentu gangguan klinis.">Masalah kesehatan mental</button>
+          <button type="button" aria-pressed="false" data-w="5.5" data-n="5,5%" data-t="Sekitar 2,45 juta remaja memenuhi kriteria gangguan mental. Beda dua angka ini penting, dan itu salah satu alasan pemahaman publik perlu dibenahi.">Memenuhi kriteria gangguan</button>
+        </div>
+        <div class="besar" aria-live="polite">34,9%</div>
+        <div class="bar"><i style="--w:34.9%"></i></div>
+        <p class="penjelas">Sekitar 15,5 juta remaja usia 10–17 tahun punya minimal satu masalah kesehatan mental dalam 12 bulan terakhir. Ini belum tentu gangguan klinis.</p>
+        <p class="sumber">I-NAMHS 2022</p>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" hidden>
+      <div class="stat-grid">
+        <div class="stat">
+          <span class="angka" data-count="54000" data-pre="&asymp; 1 : " data-dec="0">&asymp; 1 : 54.000</span>
+          <p>rasio gabungan psikolog klinis dan psikiater terhadap penduduk. Acuan WHO: 1 : 30.000.</p>
+          <div class="bar-baris"><small>Acuan WHO (1 : 30.000)</small><div class="bar"><i style="--w:100%"></i></div></div>
+          <div class="bar-baris"><small>Saat ini, sekitar 56% dari acuan</small><div class="bar"><i style="--w:56%"></i></div></div>
+          <details>
+            <summary>Lihat hitungannya</summary>
+            <p>1.495 psikiater + 3.513 psikolog klinis = 5.008 tenaga. Dibagi jumlah penduduk (&plusmn;269 juta, tersirat dari rasio psikiater di data Kemenkes) menghasilkan sekitar 1 : 54.000. Dari 3.513 psikolog klinis itu, hanya 213 yang bertugas di puskesmas.</p>
+          </details>
+          <p class="sumber">Estimasi dari data Kemenkes 2026</p>
+        </div>
+        <div class="stat">
+          <span class="angka" data-count="64" data-dec="0" data-suf="%">64%</span>
+          <p>puskesmas (6.549) mampu memberi layanan jiwa. Ada kemajuan, tapi belum merata.</p>
+          <p class="sumber">Kemenkes 2026</p>
+        </div>
+        <div class="stat">
+          <span class="angka" data-count="56" data-dec="0" data-suf="%">56%</span>
+          <p>rumah sakit umum dengan layanan jiwa terkonsentrasi di Pulau Jawa.</p>
+          <p class="sumber">Kemenkes 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" hidden>
+      <div class="hadir">
+        <p class="catatan">Di sinilah Duduk Cerita masuk</p>
+        <h3>Ruang kosong itu, kami isi dengan pemahaman</h3>
+        <!-- EDIT: ini sudut pandang Duduk Cerita, bukan data -->
+        <p>Kebutuhan besar, tenaga profesional terbatas. Di antaranya ada ruang yang bisa diisi: pemahaman masyarakat. Banyak orang belum tahu apa itu psikolog dan psikiater, apa bedanya, atau kapan waktunya mencari bantuan.</p>
+        <p>Lewat psikoedukasi berbasis sains yang dihantarkan lulusan S1 Psikologi dengan bahasa tongkrongan, kami jadi jembatan antara rasa penasaran masyarakat dan dunia profesional yang tepat.</p>
+        <div class="aksi-baris">
+          <a class="btn isi kecil" href="#beda">Bedanya psikolog dan psikiater</a>
+          <a class="btn kecil" href="podcast.html">Dengerin podcast kami</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="halaman" id="beda">
+  <div class="wadah">
+    <p class="catatan">Biar nggak ketuker</p>
+    <h2>Psikolog, psikiater, dan psikoedukasi</h2>
+    <!-- EDIT: sesuaikan bahasanya kalau perlu -->
+    <p>Pilih satu buat lihat bedanya.</p>
+    <div class="tabs" role="tablist" aria-label="Bedanya psikolog, psikiater, dan Duduk Cerita">
+      <button class="tab" role="tab" aria-selected="true">Psikolog</button>
+      <button class="tab" role="tab" aria-selected="false">Psikiater</button>
+      <button class="tab" role="tab" aria-selected="false">Duduk Cerita</button>
+    </div>
+      <div class="panel" role="tabpanel">
+        <article class="kartu"><h3>Psikolog</h3><dl class="beda-dl"><dt>Latar belakang</dt><dd>Lulusan psikologi yang melanjutkan pendidikan profesi.</dd><dt>Yang dikerjakan</dt><dd>Asesmen, konseling, dan psikoterapi.</dd><dt>Catatan</dt><dd>Tidak meresepkan obat.</dd></dl></article>
+      </div>
+      <div class="panel" role="tabpanel" hidden>
+        <article class="kartu"><h3>Psikiater</h3><dl class="beda-dl"><dt>Latar belakang</dt><dd>Dokter yang mengambil spesialis kedokteran jiwa.</dd><dt>Yang dikerjakan</dt><dd>Diagnosis medis dan penanganannya, termasuk terapi obat bila perlu.</dd><dt>Catatan</dt><dd>Bisa meresepkan obat.</dd></dl></article>
+      </div>
+      <div class="panel" role="tabpanel" hidden>
+        <article class="kartu"><h3>Duduk Cerita</h3><dl class="beda-dl"><dt>Latar belakang</dt><dd>Lulusan dan mahasiswa psikologi.</dd><dt>Yang dikerjakan</dt><dd>Psikoedukasi berbasis sains, biar kamu paham dan tahu harus ke mana.</dd><dt>Catatan</dt><dd>Bukan diagnosis dan bukan terapi.</dd></dl></article>
+      </div>
+  </div>
+</section>
+
+<section class="alur">
+  <div class="wadah">
+    <p class="catatan">Arah kami</p>
+    <h2>Visi, misi, dan yang kami lakukan</h2>
+    <!-- EDIT: dari deck Duduk Cerita Profile -->
+    <div class="kartu-grid">
+      <article class="kartu">
+        <h3>Visi</h3>
+        <p>Meningkatkan dan memperbaiki pemahaman masyarakat mengenai kesehatan mental.</p>
+      </article>
+      <article class="kartu">
+        <h3>Misi</h3>
+        <ol>
+          <li>Jadi ruang kolaboratif ilmu psikologi bagi semua praktisi: mahasiswa, lulusan sarjana, psikolog umum, sampai psikolog profesional.</li>
+          <li>Jadi ruang untuk menghidupkan dan menerapkan literasi psikologi di masyarakat.</li>
+          <li>Jadi gate keeper dalam psychological first aid.</li>
+        </ol>
+      </article>
+      <article class="kartu">
+        <h3>Yang kami lakukan</h3>
+        <ol>
+          <li>Hadir sebagai gerakan melawan konten hoaks, pseudo-science, dan self-diagnosis di media sosial.</li>
+          <li>Memberdayakan lulusan S1 Psikologi dan senior sejawat lewat ruang kolaborasi.</li>
+          <li>Jadi jembatan antara masyarakat, ilmu psikologi yang valid, dan profesional yang tepat.</li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="produk">
+  <div class="wadah">
+    <p class="catatan">Culture kami</p>
+    <h2>C.O.R.E Value</h2>
+    <p>Culture yang kami anut dalam menjalankan Duduk Cerita. Klik tiap huruf buat lihat isinya.</p>
+    <div class="core-grid">
+      <details class="core-kartu" name="core"><summary><span class="no">C</span><span class="core-nama">Collaboration</span></summary><ul><li>Workflow yang mengintegrasikan antar role</li><li>Keinginan kolektif untuk mengedukasi masyarakat</li></ul></details>
+      <details class="core-kartu" name="core"><summary><span class="no">O</span><span class="core-nama">Openness</span></summary><ul><li>Terbuka, jujur, dan tulus</li><li>Saling mengingatkan</li></ul></details>
+      <details class="core-kartu" name="core"><summary><span class="no">R</span><span class="core-nama">Responsible</span></summary><ul><li>Bertanggung jawab atas hasil tugas kepada tim yang lain</li><li>Mengutamakan etika dan manajemen prioritas</li></ul></details>
+      <details class="core-kartu" name="core"><summary><span class="no">E</span><span class="core-nama">Empathy</span></summary><ul><li>Saling menghargai</li><li>Merangkul dan menghormati</li></ul></details>
+    </div>
+  </div>
+</section>
+
+<section class="batas">
+  <div class="wadah">
+    <p class="catatan">Satu hal penting</p>
+    <h2>Teman ngobrol, bukan pengganti profesional</h2>
+    <!-- EDIT: sesuaikan kalimat batasan -->
+    <p>Duduk Cerita adalah media psikoedukasi, bukan layanan diagnosis atau terapi. Kalau kamu lagi kewalahan, ceritalah ke psikolog atau psikiater, atau orang terdekat yang kamu percaya.</p>
+  </div>
+</section>
+
+<section class="halaman cta-tengah">
+  <div class="wadah">
+    <p class="catatan">Yuk, ikut duduk</p>
+    <h2>Mulai dari satu episode</h2>
+    <div class="aksi-baris">
+      <a class="btn isi" href="podcast.html">Dengerin podcast</a>
+      <a class="btn" href="tim.html">Kenalan sama tim</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer: sama di semua halaman -->
+<footer>
+  <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita" loading="lazy"></a>
+  <div class="sosmed">
+    <a href="https://instagram.com/dudukcerita.id" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://open.noice.id/catalog/bb728cef-943c-4de5-a036-f1ba72d7c10d" target="_blank" rel="noopener">Noice</a>
+    <a href="https://open.spotify.com/show/5ro07TWW1B1qlpnfPcXH9s" target="_blank" rel="noopener">Spotify</a>
+    <a href="https://www.youtube.com/@dudukceritaid" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://medium.com/" target="_blank" rel="noopener">Medium</a>
+  </div>
+  <div class="hashtag">#MembiasakanBerPsikologi</div>
+</footer>
+</body>
+</html>

@@ -6,18 +6,22 @@
 <!-- EDIT: judul tab & deskripsi buat Google -->
 <title>Gibran Ridho Aslam | Duduk Cerita</title>
 <meta name="description" content="Profil anggota tim Duduk Cerita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/styling/style.css">
+<script src="assets/js/site.js" defer></script>
 </head>
 <body>
 
 <header class="nav">
   <div class="wadah">
-    <a class="logo" href="index.html"><img src="assets/logo-nav.png" alt="Duduk Cerita"></a>
-    <ul>
+    <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita"></a>
+    <button class="burger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-nav"><span></span><span></span><span></span></button>
+    <ul id="menu-nav">
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="index.html#tentang">Tentang</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
       <li><a href="tim.html">Tim</a></li>
     </ul>
   </div>
@@ -32,8 +36,8 @@
 </section>
 <section class="halaman">
   <div class="wadah profil">
-    <!-- EDIT: foto: assets/foto-gibran.jpg -->
-    <div class="foto"><img src="assets/foto-gibran.jpg" alt="Gibran Ridho Aslam" width="600" height="600"></div>
+    <!-- EDIT: foto: assets/image/tim/gibran.webp -->
+    <div class="foto"><img src="assets/image/tim/gibran.webp" alt="Gibran Ridho Aslam" width="400" height="400"></div>
     <div>
       <h2>Gibran Ridho Aslam</h2>
       <!-- EDIT: posisi -->
@@ -70,7 +74,7 @@
 
 <!-- Footer: sama di semua halaman -->
 <footer>
-  <a class="logo" href="index.html"><img src="assets/logo-nav.png" alt="Duduk Cerita"></a>
+  <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita" loading="lazy"></a>
   <div class="sosmed">
     <a href="https://instagram.com/dudukcerita.id" target="_blank" rel="noopener">Instagram</a>
     <a href="https://open.noice.id/catalog/bb728cef-943c-4de5-a036-f1ba72d7c10d" target="_blank" rel="noopener">Noice</a>

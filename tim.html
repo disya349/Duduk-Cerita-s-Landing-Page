@@ -6,18 +6,22 @@
 <!-- EDIT: judul tab & deskripsi buat Google -->
 <title>Tim | Duduk Cerita</title>
 <meta name="description" content="Kenalan sama tim di balik Duduk Cerita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/styling/style.css">
+<script src="assets/js/site.js" defer></script>
 </head>
 <body>
 
 <header class="nav">
   <div class="wadah">
-    <a class="logo" href="index.html"><img src="assets/logo-nav.png" alt="Duduk Cerita"></a>
-    <ul>
+    <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita"></a>
+    <button class="burger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-nav"><span></span><span></span><span></span></button>
+    <ul id="menu-nav">
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="index.html#tentang">Tentang</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
       <li><a href="tim.html">Tim</a></li>
     </ul>
   </div>
@@ -35,25 +39,25 @@
 <section class="halaman">
   <div class="wadah">
     <div class="tim-grid tim-utama">
-      <!-- EDIT: satu blok = satu orang. Foto: assets/foto-dicki.jpg -->
+      <!-- EDIT: satu blok = satu orang. Foto: assets/image/tim/dicki.webp -->
       <article class="orang">
-        <div class="foto"><img src="assets/foto-dicki.jpg" alt="Dicki Syafrudin" width="600" height="600"></div>
+        <div class="foto"><img src="assets/image/tim/dicki.webp" alt="Dicki Syafrudin" width="400" height="400"></div>
         <h3>Dicki Syafrudin</h3>
         <p class="posisi">Initiator &amp; Coordinator</p>
         <a class="btn kecil" href="Tim-Dicki.html">Lihat profil</a>
       </article>
 
-      <!-- EDIT: satu blok = satu orang. Foto: assets/foto-fitri.jpg -->
+      <!-- EDIT: satu blok = satu orang. Foto: assets/image/tim/fitri.webp -->
       <article class="orang">
-        <div class="foto"><img src="assets/foto-fitri.jpg" alt="Fitri Amalia" width="600" height="600"></div>
+        <div class="foto"><img src="assets/image/tim/fitri.webp" alt="Fitri Amalia" width="400" height="400"></div>
         <h3>Fitri Amalia</h3>
         <p class="posisi">Human Resource Manager</p>
         <a class="btn kecil" href="Tim-Fitri.html">Lihat profil</a>
       </article>
 
-      <!-- EDIT: satu blok = satu orang. Foto: assets/foto-gibran.jpg -->
+      <!-- EDIT: satu blok = satu orang. Foto: assets/image/tim/gibran.webp -->
       <article class="orang">
-        <div class="foto"><img src="assets/foto-gibran.jpg" alt="Gibran Ridho Aslam" width="600" height="600"></div>
+        <div class="foto"><img src="assets/image/tim/gibran.webp" alt="Gibran Ridho Aslam" width="400" height="400"></div>
         <h3>Gibran Ridho Aslam</h3>
         <p class="posisi">Content Research Lead</p>
         <a class="btn kecil" href="Tim-Gibran.html">Lihat profil</a>
@@ -83,9 +87,50 @@
   </div>
 </section>
 
+<section class="dokumentasi">
+  <div class="wadah">
+    <p class="catatan">Di luar mik</p>
+    <h2>Keseruan tim</h2>
+    <p>Dokumentasi rekaman, rapat, dan momen-momen kecil bareng tim.</p>
+    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Dokumentasi tim">
+      <div class="carousel-track" tabindex="0">
+        <!-- EDIT: satu blok = satu foto. Ganti isi .slide-foto dengan: <img src="assets/image/dokumentasi/dokumentasi-1.webp" alt="deskripsi foto" loading="lazy"> -->
+        <figure class="slide">
+          <div class="slide-foto"></div>
+          <figcaption><small>Rekaman</small>Suasana rekaman podcast</figcaption>
+        </figure>
+        <!-- EDIT: satu blok = satu foto. Ganti isi .slide-foto dengan: <img src="assets/image/dokumentasi/dokumentasi-2.webp" alt="deskripsi foto" loading="lazy"> -->
+        <figure class="slide">
+          <div class="slide-foto"></div>
+          <figcaption><small>Di balik layar</small>Diskusi topik sebelum rekaman</figcaption>
+        </figure>
+        <!-- EDIT: satu blok = satu foto. Ganti isi .slide-foto dengan: <img src="assets/image/dokumentasi/dokumentasi-3.webp" alt="deskripsi foto" loading="lazy"> -->
+        <figure class="slide">
+          <div class="slide-foto"></div>
+          <figcaption><small>Kumpul tim</small>Ngobrol santai setelah rapat</figcaption>
+        </figure>
+        <!-- EDIT: satu blok = satu foto. Ganti isi .slide-foto dengan: <img src="assets/image/dokumentasi/dokumentasi-4.webp" alt="deskripsi foto" loading="lazy"> -->
+        <figure class="slide">
+          <div class="slide-foto"></div>
+          <figcaption><small>Keseruan</small>Momen-momen kecil bareng tim</figcaption>
+        </figure>
+        <!-- EDIT: satu blok = satu foto. Ganti isi .slide-foto dengan: <img src="assets/image/dokumentasi/dokumentasi-5.webp" alt="deskripsi foto" loading="lazy"> -->
+        <figure class="slide">
+          <div class="slide-foto"></div>
+          <figcaption><small>Dokumentasi</small>Caption foto berikutnya</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-kontrol">
+        <button type="button" data-geser="-1" aria-label="Foto sebelumnya">&larr;</button>
+        <button type="button" data-geser="1" aria-label="Foto berikutnya">&rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Footer: sama di semua halaman -->
 <footer>
-  <a class="logo" href="index.html"><img src="assets/logo-nav.png" alt="Duduk Cerita"></a>
+  <a class="logo" href="index.html"><img src="assets/image/logo/duduk-cerita-horizontal.webp" width="1000" height="98" alt="Duduk Cerita" loading="lazy"></a>
   <div class="sosmed">
     <a href="https://instagram.com/dudukcerita.id" target="_blank" rel="noopener">Instagram</a>
     <a href="https://open.noice.id/catalog/bb728cef-943c-4de5-a036-f1ba72d7c10d" target="_blank" rel="noopener">Noice</a>
